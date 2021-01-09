@@ -14,7 +14,7 @@ boolean getMCP9808() {
 
   Serial.println("Found MCP9808!");
 
-  tempsensor.setResolution(3); // sets the resolution mode of reading, the modes are defined in the table bellow:
+  tempsensor.setResolution(2); // sets the resolution mode of reading, the modes are defined in the table bellow:
   // Mode Resolution SampleTime
   //  0    0.5°C       30 ms
   //  1    0.25°C      65 ms

@@ -35,7 +35,7 @@ void setup() {
     //  if (pushLogic()) { //decide if push will occur or nt and what message will be
     //    if (wiFiNeeded) {
     if (connectWiFi()) {
-      sendToCorlysis();
+   //   sendToCorlysis();
       //        pushOver();
       //        pushSafer();
       //        ifttt();
