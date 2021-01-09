@@ -33,7 +33,7 @@ void setup() {
 
     // ONLY Sending data to Corlysis
     //  if (pushLogic()) { //decide if push will occur or nt and what message will be
-    //    if (wiFiNeeded) {
+        if (wiFiNeeded) {
     if (connectWiFi()) {
    //   sendToCorlysis();
       //        pushOver();
@@ -41,8 +41,8 @@ void setup() {
       //        ifttt();
       //        mqtt();
     }
-    //    }
-    //    udp();
+    }
+        udp();
     //  }
   }
   killPower();
