@@ -44,7 +44,7 @@ boolean getMCP9808() {
     dtostrf(tempC, 1, 2, temperatureString);//convert float to str
   } else { //in F
     Serial.println("Sending  in F");
-    dtostrf(tempF, 1, 2, temperatureString);//convert float to str
+    dtostrf(tempF, 1, 0, temperatureString);//convert float to str
   }
   Serial.print("ms to measure ");
   Serial.println(millis() - getMCP9808startTime);

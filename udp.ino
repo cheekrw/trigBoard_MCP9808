@@ -74,7 +74,7 @@ void udp() {
     for (int i = 0; i < config.udpBlastCount; i++) {
       if (udp.beginPacket(udpAddress, udpPort) == 1) {
         // udp.printf("%s %s", config.trigName, pushMessage);
-        udp.printf("%s F, batt: %s", temperatureString, batCharString);
+        udp.printf("%s F, %sV", temperatureString, batCharString);
        if (udp.endPacket() == 1) {
           Serial.print(i);
           Serial.println(" success");
