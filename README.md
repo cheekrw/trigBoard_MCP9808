@@ -2,7 +2,7 @@
 
 This is a hack of Kevin Darrah's teaching.  https://trigboard-docs.readthedocs.io/en/latest/temperatureSensor.html
 
-This changes from sending data to Corlysis via the house wifi to sending data to an esp32 in the house with a TFT LCD display.  This repo is just for the code running on the outside trigboard.  The indoor esp32 code is elsewhere.
+This changes from sending data to Corlysis via the house wifi to sending data to an esp32 in the house with a TFT LCD display.  This repo is just for the code running on the outside esp32 trigboard.  The indoor part is an Adafruit Huzzah32 feather (esp32) and that code is elsewhere.
 
 I expect to add internet connectivity back in later.  For now it's just a nice bright display of the outdoor temperature.  No online reporting or storage, though I intend to add that at some point.
 
