@@ -10,6 +10,7 @@
 const char fwVersion[] = "8/05/20_MCP9808";
 
 char temperatureString[5];//where the temperature in F/C is stored
+RTC_DATA_ATTR char lastTemperatureString[5];
 boolean getMCP9808();
 
 // USE CONFIGURATOR TO SET EVERYTHING UP

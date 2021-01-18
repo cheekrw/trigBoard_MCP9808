@@ -48,5 +48,12 @@ boolean getMCP9808() {
   }
   Serial.print("ms to measure ");
   Serial.println(millis() - getMCP9808startTime);
-  return true;
+
+  if (temperatureString != lastTemperatureString) {
+    return true;
+  }
+  else {
+    return false;
+  }
+  
 }
