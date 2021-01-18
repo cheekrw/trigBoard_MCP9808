@@ -51,9 +51,9 @@ boolean getMCP9808() {
 
   if (temperatureString != lastTemperatureString) {
     return true;
+    lastTemperatureString = temperatureString;
   }
   else {
     return false;
   }
-  
 }
