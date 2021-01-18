@@ -7,10 +7,12 @@
 
 #include "includes.h"
 #include <HTTPClient.h>// needed this for Corlysis
+#include <EEPROM.h>
+#define EEPROM_SIZE 4
 const char fwVersion[] = "8/05/20_MCP9808";
 
 char temperatureString[5];//where the temperature in F/C is stored
-RTC_DATA_ATTR char lastTemperatureString[5];//holds previous temperature in RTC memory
+// RTC_DATA_ATTR int lastTempFint;//holds previous temperature in RTC memory
 boolean getMCP9808();
 
 // USE CONFIGURATOR TO SET EVERYTHING UP
@@ -21,6 +23,7 @@ boolean getMCP9808();
 // Token = Contact Still Open
 
 void setup() {
+  EEPROM.begin(EEPROM_SIZE);
   pinMode(ESPlatchPin, OUTPUT);
   digitalWrite(ESPlatchPin, HIGH);
   pinMode(LEDpin, OUTPUT);
